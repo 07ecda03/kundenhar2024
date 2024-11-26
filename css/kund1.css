@@ -1,0 +1,28 @@
+#container{ 
+
+    display: grid; 
+    width: 90vw;
+    height: 90vh;
+    padding: 40px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas: 
+    ' . . . . '
+    ' . mn mn . '
+    ' . mn mn . '
+    ' . . . . '
+
+;
+}
+
+#layout{
+    grid-area:  mn ;
+    background-color: #f39c12;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 
+    
+    ;
+}
