@@ -14,8 +14,11 @@ grid-template-areas:
 }
 
 #header{
-grid-area: hd;
-background-color: bisque;
+    grid-area: hd;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+
 }
 
 #nav{
@@ -26,6 +29,15 @@ background-color: bisque;
 
     #main{
         grid-area: mn;
-        background-color: rgb(208, 165, 112);
-        
+        background-color: rgb(208, 165, 112);  
         }
+    
+    #mainlayout{
+        display: grid;
+        height: 220vh;
+        width: 75vw ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 15% 20% 30% 17% ;
+        padding: 20px;
+        
+    }
