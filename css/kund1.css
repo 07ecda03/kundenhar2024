@@ -15,7 +15,7 @@
 
 #layout{
     grid-area:  mn ;
-    background-color: #f39c12;
+    background-color: #5bebcc;
 }
 
 
@@ -41,6 +41,9 @@
     font-size: 42px;
     justify-content: center;
     align-items: center;
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
 }
 
 #h3{
