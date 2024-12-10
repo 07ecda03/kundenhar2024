@@ -1,4 +1,6 @@
-
+body{
+    background-color: #e7f7fc;  
+}
 
 #wrapper{
 display: grid;
@@ -14,20 +16,21 @@ grid-template-areas:
 
 #header{
     grid-area: hd;
-    background-color: #5bebcc;
+    background-color: #50c7f3;
     display: flex;
     align-items: center;
     font-family: Tahoma, sans-serif;
     font-style: italic;
     font-variant: small-caps;
-    
+    border-width: 5px;
+    border-style: double
     
 
 }
 
 #nav{
     grid-area: nav;
-    background-color: #4acfb2;
+    background-color:#f3ac50;
     display: flex;
     align-items: normal;
     
@@ -36,7 +39,8 @@ grid-template-areas:
     
 #main{
         grid-area: mn;
-        background-color: #e7fcf7;  
+        background-color: #e7f7fc;  
+
         }
     
 #mainlayout{
@@ -46,7 +50,7 @@ grid-template-areas:
         overflow: scroll;
         scrollbar-width: none ;
         grid-template-columns: 100%;
-        grid-template-rows: 45% 33% 45% 58% 33% ;
+        grid-template-rows: 60% 50% 60% 60% 33% ;
         padding: 20px;
         grid-template-areas: 
         ' s1 '
@@ -55,33 +59,47 @@ grid-template-areas:
         ' s4 '
         ' s5 '
         ;
-        
     }
+
+
 
 #s1{
     grid-area: s1;
     display: grid;
-    grid-template-rows: 10% 5% 85% ;
+    grid-template-rows: 10% 9% 85% ;
     grid-template-areas: 
     ' hd1 hd1 hd1 '
     ' mn1 mn1 mn1 '
-    ' img img img'
+    ' imgshere imgshere imgshere'
     
 
 ;
- 
+ }
 
-}
 
-#hd1{
-    grid-area: hd1;
-    display: flex;
-    font-family: Tahoma, sans-serif;
+        #hd1{
+            grid-area: hd1;
+            display: flex;
+            font-family: Tahoma, sans-serif;
 
-}
+        }
 
-#mn1{
-    grid-area: mn1;
-    display: flex;
-    font-family: Tahoma, sans-serif;
-}
+        #mn1{
+            grid-area: mn1;
+            display: flex;
+            font-family: Tahoma, sans-serif;
+         }
+
+        #imgshere{
+            display: flex;
+            grid-area: imgshere;
+            flex-wrap: wrap;
+        }
+
+
+        .imgs1{
+            object-fit:cover;
+            width: 23vw;
+            height: 23vh;
+            padding: 7px;
+        }
