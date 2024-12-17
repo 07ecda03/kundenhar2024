@@ -4,5 +4,48 @@
     font-style: normal;
   }
 
-
+body{
+  background-color: #efefef;
+}
   
+#wrapper{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas: 
+    ' .  mn mn . '
+    ' . mn mn . '
+    ' . mn mn . '
+    ' . . . . '
+    ;
+
+}
+
+#container{
+  display: grid;
+  grid-area: mn;
+  background-color: #ddd;
+  grid-template-columns: repeat(50%);
+    grid-template-rows: 17% auto auto 5%;
+    grid-template-areas: 
+    'hd hd'
+    'mn1 mn1'
+    'mn1 mn1'
+    'ft ft';
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+#hd{
+  grid-area: hd;
+  background-color: #5673c1;
+  font-family: "Chocolate Classical Sans", sans-serif;
+}
+
+#ft{
+  grid-area: ft;
+  background-color: black;
+}
