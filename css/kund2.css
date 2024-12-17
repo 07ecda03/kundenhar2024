@@ -1,6 +1,15 @@
 body{
     background-color: #e7f7fc;  
+
 }
+
+
+.chocolate-classical-sans-regular {
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 
 #wrapper{
 display: grid;
@@ -16,41 +25,118 @@ grid-template-areas:
 
 #header{
     grid-area: hd;
-    background-color: #50c7f3;
+    background-color: #ffffff76; 
     display: flex;
     align-items: center;
     font-family: Tahoma, sans-serif;
     font-style: italic;
     font-variant: small-caps;
-    border-width: 5px;
-    border-style: double
+    font-size: large;
+    border-style: groove;
+    border-color: #dce5fe;
+    border-width: 3px;
+    color: #5673c1;
+    padding-left: 20px;
     
+
 
 }
 
+#logo{
+    display: flex;
+    height: 10vh;
+    align-self: right;
+    justify-items: right;
+}
+
+#palmgif{
+    display: flex;
+    height: 12vh;
+    flex-direction: row-reverse;
+    
+}
 #nav{
     grid-area: nav;
-    background-color:#f3ac50;
-    display: flex;
-    align-items: normal;
-    
+    background-color: #e7f7fc;  
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows:  10% 10% 10% 10% 10%;
+    grid-template-areas: 
+    'nav1'
+    'nav2'
+    'nav3'
+    'fillernavs'
+    '.' 
+    ;
+    margin-top: 50px;
+    margin-left: 20px;
+   
+
     }
+
+    
+    #nav1{
+        display: grid;
+        grid-area: nav1; 
+        align-items: center;
+        border-radius: 8%;
+        border-style: groove;
+        text-align: center;
+        border-color: #dce5fe;
+        background-color: #ffffff76;
         
+    }
+
+    #nav2{
+        display: grid;
+        grid-area: nav2;
+        align-items: center;
+        border-radius: 8%;
+        border-style: groove;
+        text-align: center;
+        border-color: #dce5fe;
+        background-color: #ffffff76;
+    }
+
+    #nav3{
+        display: grid;
+        grid-area: nav3;
+        align-items: center;
+        border-radius: 8%;
+        border-style: groove;
+        text-align: center;
+        border-color: #dce5fe;
+        background-color: #ffffff76;
+        
+    }
+
+     a{
+        text-decoration: none;
+        color: black;
+        font-family: "Chocolate Classical Sans", sans-serif;
+        font-size: small;
+    }
+    #gifplane{
+        display: flex;
+        grid-area: fillernavs ;
+        height: 20vh;
+        justify-content: center;
+    }
     
 #main{
         grid-area: mn;
-        background-color: #e7f7fc;  
-
         }
     
-#mainlayout{
+    #mainlayout{
         display: grid;
         height: 100vh;
         width: 75vw ;
         overflow: scroll;
         scrollbar-width: none ;
         grid-template-columns: 100%;
-        grid-template-rows: 60% 50% 60% 60% 33% ;
+        grid-template-rows: auto ;
+        grid-row-gap: 20px;
         padding: 20px;
         grid-template-areas: 
         ' s1 '
@@ -63,9 +149,13 @@ grid-template-areas:
 
 
 
-#s1{
-    grid-area: s1;
+    #s1{
+   grid-area: s1;
     display: grid;
+    background-color: #ffffff76;
+    border-radius: 10%;
+    margin-top: 20px;
+    grid-gap: 12px;
     grid-template-rows: 10% 9% 85% ;
     grid-template-areas: 
     ' hd1 hd1 hd1 '
@@ -80,26 +170,76 @@ grid-template-areas:
         #hd1{
             grid-area: hd1;
             display: flex;
-            font-family: Tahoma, sans-serif;
+            font-family: "Chocolate Classical Sans", sans-serif;
+            margin: 20px;
+            
+            
+            
 
         }
 
         #mn1{
             grid-area: mn1;
             display: flex;
-            font-family: Tahoma, sans-serif;
+            font-family: "Chocolate Classical Sans", sans-serif;
+            color:#5673c1;
+            margin: 20px;
+            align-items: center;
+            padding-right: 60px;
+
+            
+
          }
 
         #imgshere{
             display: flex;
             grid-area: imgshere;
             flex-wrap: wrap;
+            margin-top: 20px;
+            margin: 20px;
         }
 
 
         .imgs1{
             object-fit:cover;
-            width: 23vw;
-            height: 23vh;
+            width: 21vw;
+            height: 21vh;
             padding: 7px;
+            margin-top: -10px;
+            
+            
         }
+
+        .thedescriptions{
+            font-family: "Chocolate Classical Sans", sans-serif;
+            font-size: smaller;
+            margin-left: 8px;
+        }
+
+        
+    #s2{
+        border: #e7f7fc;
+        grid-area: s2;
+        display: grid;
+        background-color: #1e3471e7;
+        border-radius: 10vh;
+        margin-top: 20px;
+        background-image: url(/forphotoshop/snow02.gif);
+        font-family: "Chocolate Classical Sans", sans-serif;
+        font-size: smaller;
+        margin-left: 3px;
+        color: #ffffff;
+        grid-template-areas: 
+        'hd2 hd2 hd2 hd2'
+        'mn2 mn2 mn2 mn2  '
+        ' box12 box12 box22 '
+        ' box12 box12 box22 box22'
+        
+        ;
+
+
+    }  
+
+
+        
+    
